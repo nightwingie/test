@@ -53,7 +53,7 @@ public class LogProcessor {
 
 			br.close();
 		} catch (IOException e) {
-			logger.error(String.format("start reading log file [%s]", file) , e);
+			logger.error(String.format("error reading log file [%s]", file) , e);
 		}
 
 		logger.info(String.format("finished reading log file [%s], total number of unique log id's [%d]", file, logs.size()));
